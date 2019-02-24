@@ -1,0 +1,29 @@
+$def with(datos)
+
+
+    <center>
+      <table class="table table-striped">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Nombre Cliente</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Colonia</th>
+            <th scope="col">Calle </th>
+            <th scope="col">Delete</th>
+            <th scope="col">Update</th>
+          </tr>
+        </thead>
+        <tbody>
+                $for row in datos:
+                <tr>
+                    <td>$row.nombre_cliente</td>
+                    <td>$row.apellidos_cliente</td>
+                    <td>$row.colonia</td>
+                    <td>$row.calle</td>
+                    <td><a href="/deleteclientes/$row.nombre_cliente">Delete</a></td>
+                    <td><a href="/updateclientes/$row.nombre_cliente">Update</a></td>
+                </tr>
+        </tbody>
+      </table>
+    </center>
+<a href="/insertclientes"><center><button type="submit" class="btn btn-outline-info">Insertar</button></center></a>

@@ -1,0 +1,20 @@
+$def with(datos)
+
+
+<center>
+<form method="POST">
+    <label for="nombre_cliente">Nombre Cliente</label>
+    <input type="text" readonly="true" value="$datos.nombre_cliente" id="nombre_cliente" name="nombre_cliente">
+    <br>
+    <label for="apellidos_cliente">Apellidos</label>
+    <input type="text" value="$datos.apellidos_cliente" id="apellidos_cliente" name="apellidos_cliente">
+    <br>
+    <label for="colonia">colonia</label>
+    <input type="text" value="$datos.colonia" id="colonia" name="colonia">
+    <br>
+    <label for="calle">Calle</label>
+    <input type="text" value="$datos.calle" id="calle" name="calle">
+    <br>
+    <button type="submit" class="btn btn-outline-info">Update</button>
+</form>
+</center>
